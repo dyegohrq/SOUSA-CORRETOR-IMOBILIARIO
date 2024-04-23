@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+
+    /* Color */
+    --white: #fff;
+    --light: #f2f2f2;
+    --light-1: #dadada;
+    --grey: #686868;
+    --dark: #0d0d0d;
+    --dark-1:#0c0c0c; 
+    --secondery: #f2c288;
+    --secondery-1: #f3c894;
+
+
+    /* Font */
+    --font: "Red Hat Display", sans-serif;
+    --smallX: 0.75em;
+    --small: 0.875em;
+    --paragrafo: 1em;
+    --h6: 1.25em;
+    --h5: 1.4375em;
+    --h4: 1.75em;
+    --h3: 2.0625em;
+    --h2: 2.5em;
+    --h1: 2.9375em;
+
+    --font-bold: bold;
+
+    /* Padding */
+    --padding-mobile: 1em;
+    --padding-desktop: 1.25em;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    object-fit: cover;
+}
+
+body,
+html {
+    font-family: var(--font);
+    font-size: var(--paragrafo);
+    background: var(--dark);
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-mobile);
+}
+
+#header .logo .img-logo {
+    width: 160px;
+    height: 100%;
+}
