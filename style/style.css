@@ -43,6 +43,10 @@ img {
     object-fit: cover;
 }
 
+a {
+    text-decoration: none;
+}
+
 body,
 html {
     font-family: var(--font);
@@ -63,4 +67,32 @@ html {
 #header .logo .img-logo {
     width: 160px;
     height: 100%;
+}
+
+#header .burger, .bar {
+    position: relative;
+} 
+
+#header .burger {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+}
+
+#header .burger .hamburguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+#header .burger .hamburguer .bar {
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    border: none;
+    background: var(--light);
 }
