@@ -107,7 +107,7 @@ html {
     overflow: auto;
 }
 
-#header .active {
+#header .nav.active {
     visibility: visible;
 }
 
@@ -142,3 +142,11 @@ html {
     height: 100%;
     overflow: auto;
 } */
+
+#header-main .lancamentos {
+    background-color: var(--light);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-weight: var(--font-bold);
+}
