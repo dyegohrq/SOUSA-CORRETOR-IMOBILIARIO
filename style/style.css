@@ -188,7 +188,7 @@ html {
     margin-bottom: 20px;
 }
 
-.veja-mais .separetade p {
+.separetade p {
     border: 1px solid var(--secondery);
     width: 95px;
     height: 35px;
@@ -210,16 +210,24 @@ html {
     gap: 20px;
 }
 
-.veja-mais .img-ilustrated .ilustrated-1:hover,
-.veja-mais .img-ilustrated .ilustrated-2:hover, 
-.veja-mais .img-ilustrated .ilustrated-3:hover {
-    display: block;
-    position: relative;
-    background-color: rgba(242, 194, 136, 0);
+.saiba-mais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2c28895;
     width: 100%;
     height: 100%;
+    position: absolute;
     border-radius: 8px;
-    z-index: 1;
+    opacity: 0;
+    font-size: var(--h6);
+    font-weight: bold;
+    color: #0c0c0cb5;
+    transition: all ease-in-out .5s;
+}
+
+.saiba-mais:hover {
+    opacity: 1;
 }
 
 .veja-mais .img-ilustrated .ilustrated-1 {
@@ -230,14 +238,52 @@ html {
     border-radius: 8px;
 }
 .veja-mais .img-ilustrated .ilustrated-2 {
+    position: relative;
     background: url(../recursos/Screenshot_4.png) no-repeat center / cover;
     width: 100%;
     height: 100%;
     border-radius: 8px;
 }
 .veja-mais .img-ilustrated .ilustrated-3 {
+    position: relative;
     background: url(../recursos/Screenshot_5.png) no-repeat center / cover;
     width: 100%;
     height: 100%;
     border-radius: 8px;
+}
+
+.sobre {
+    padding: var(--padding-mobile);   
+}
+
+.sobre .sobre-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--padding-mobile);
+}
+
+.sobre .img-sousa {
+    background: url(../recursos/foto-transparente-reduzida.png)no-repeat center / cover, linear-gradient(to bottom, #c7bbbb0f, #37506a59 100%);
+    width: 194px;
+    height: 264px;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.sobre .sobre-description .text-sobre {
+    color: var(--light-1);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sobre .sobre-description .text-sobre h4 {
+    font-size: var(--paragrafo);
+    font-weight: none;
+}
+
+.sobre .sobre-description .text-sobre p {
+    font-size: var(--small);
 }
