@@ -414,6 +414,18 @@ main {
         top: 103px;
     }
 
+    #header #nav #menu {
+        height: 350px;
+        gap: 25px;
+        padding: var(--padding-tablet) 0;
+    }
+
+    #header #nav #menu li a {
+        color: var(--secondery);
+        text-transform: uppercase;
+        font-size: var(--h6);
+    }
+
     main {
         padding-top: 106px;
     }
@@ -465,6 +477,20 @@ main {
 
     .sobre .sobre-description .text-sobre p {
         font-size: var(--h6);
+    }
+
+    #footer .logo .logo-footer {
+        background: url(../recursos/imagens/logo-transparente-light.png) no-repeat center / cover;
+        width: 250px;
+        height: 140px;
+    }
+
+    #footer .nav-footer li a {
+        font-size: var(--paragrafo);
+    }
+
+    #footer .direitos, #footer .direitos a {
+        font-size: var(--paragrafo);
     }
 }
 
