@@ -510,9 +510,9 @@ main {
     }
 }
 
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 1020px) {
     #header {
-        padding: 0 80px;
+        padding: 0 50px;
         position: static;
     }
 
@@ -529,7 +529,7 @@ main {
     }
 
     #header #nav #menu {
-        width: 61%;
+        width: 71%;
         height: auto;
         flex-direction: row;
         align-items: center;
@@ -543,7 +543,7 @@ main {
     
 
     #header-main .img-apresentacao {
-        height: 442px;
+        height: 377px;
         max-height: 500px;
     }
 
@@ -554,8 +554,8 @@ main {
     }
 
     .veja-mais .img-ilustrated {
-        grid-template-columns: 1fr repeat(1, 410px);
-        grid-template-rows: repeat(2, 256px);
+        grid-template-columns: 1fr repeat(1, 333px);
+        grid-template-rows: repeat(2, 230px);
     }
 
     .sobre .sobre-description {
@@ -614,6 +614,13 @@ main {
     }
     
     
+}
+
+@media screen and (min-width: 1199.98px) {
+     #header {
+        padding: 0 80px;
+        position: static;
+    }
 }
 
 @media screen and (min-width: 1399.98px) {
